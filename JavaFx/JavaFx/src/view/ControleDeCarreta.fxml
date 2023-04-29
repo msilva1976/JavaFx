@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="New" />
+            <MenuItem mnemonicParsing="false" text="Close" />
+            <MenuItem mnemonicParsing="false" text="Save" />
+            <MenuItem mnemonicParsing="false" text="Quit" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane fx:id="PESAGEM" maxHeight="-1.0" maxWidth="-1.0" prefHeight="373.0" prefWidth="557.0" VBox.vgrow="ALWAYS">
+         <effect>
+            <ColorAdjust />
+         </effect>
+         <children>
+            <Label layoutX="25.0" layoutY="21.0" text="CONTROLE DE CARRETAS" />
+            <Label layoutX="25.0" layoutY="52.0" text="FROTA" />
+            <TextField layoutX="24.0" layoutY="76.0" prefHeight="24.0" prefWidth="112.0" />
+            <Label layoutX="154.0" layoutY="52.0" text="PLACA CAVALO" />
+            <Label layoutX="322.0" layoutY="52.0" text="PLACA CARRETA" />
+            <TextField layoutX="154.0" layoutY="76.0" prefHeight="24.0" prefWidth="152.0" />
+            <TextField layoutX="320.0" layoutY="76.0" prefHeight="24.0" prefWidth="152.0" />
+            <Label layoutX="25.0" layoutY="135.0" text="NOME MOTORISTA" />
+            <TextField layoutX="24.0" layoutY="151.0" prefHeight="24.0" prefWidth="450.0" />
+            <Label layoutX="27.0" layoutY="193.0" text="CAPACIDADE GEO" />
+            <Label layoutX="211.0" layoutY="193.0" text="QUANT. EIXOS" />
+            <Label layoutX="329.0" layoutY="193.0" text="DESTINO" />
+            <TextField layoutX="24.0" layoutY="217.0" prefHeight="24.0" prefWidth="180.0" />
+            <TextField layoutX="211.0" layoutY="217.0" prefHeight="24.0" prefWidth="108.0" />
+            <TextField layoutX="329.0" layoutY="217.0" prefHeight="24.0" prefWidth="152.0" />
+            <Button layoutX="25.0" layoutY="283.0" mnemonicParsing="false" text="SALVAR" />
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>
